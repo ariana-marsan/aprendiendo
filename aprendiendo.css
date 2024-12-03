@@ -1,33 +1,152 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway';
+    border: none;
+}
 .h1{
     display: flex;
     color:red;
     align-items: center;
     justify-content: center;
+    background-color: #0008;
+    font-family: 'Parkinsans', 'Times New Roman', Times, serif;
+    padding: 1rem;
+}
+.h1:hover{
+    transition: 2s;
+    color:#fff;
+}
+.header{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+.firstLine{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.link{
+    color:#fff;
+    text-decoration: none;
+    
+}
+.link:hover{
+    color:#f00;
+    text-decoration: underline;
+}
+.spider{
+    width: 30px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 100%;
+    display: grid;
+    place-items: center;
+}
+.spider:hover{
+    color: #f00;
+    background-color: #8007;
+    text-decoration: none;
 }
 .body{
-    background: radial-gradient(#e1c,#51f);
-    height: 100 vh;
+    background: linear-gradient(#ddd,#fff);
+    height: 100vh;
 }
-.div1{
-    display: flex;
-    color: #393;
-    font-size: 20px;
-    align-items: center;
-    justify-content: center;
-}
-.div2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.queery{
+    display:flex;
+    padding: 1rem;
 }
 .foto{
     width: 350px;
     height: 400px;
+
 }
 .foto:hover{
     filter: blur(3px) ;
     box-shadow: 0 0 40px 0 #0009;
     transition:filter 4s, box-shadow 0.8s ease-in-out;
+}
+.texto{
+    display: flexbox;
+}
+.pregunta{
+    padding: 1rem;
+    display: flex;
+    align-items: 50vw;
+}
+.formulario{
+    display: flexbox;
+    margin-left: 1rem;
+    border:solid 1px red;
+    width: fit-content;
+
+}
+.input1{
+    margin: 1rem;
+    display: flex;
+    border: solid 0.2rem transparent;
+    background-color: transparent;
+    border-left-color: #f00;
+    border-bottom-color: #f009;
+    border-top-color: transparent;
+    border-right-color:transparent;
+}
+.input1::placeholder{
+    color:#fa0;
+    padding:0.4rem
+}
+.input2{
+    margin: 1rem;
+    display: flex;
+    padding:0.3rem;
+    background-color: #f009;
+    border: solid 0.1rem #f00;
+}
+.nombres{
+    display: flexbox;
+    margin: auto;
+    margin-bottom: 1rem;
+    width: fit-content;
+    background-color: #f009;
+    color:#000;
+}
+.pick{
+    padding: 1REM;
+}
+.bugs{
+    padding: 1rem;
+}
+.formulario2{
+    display:flexbox;
+    margin: auto;
+    width:fit-content;
+    border: solid 1px #f00;
+    padding: 1rem;
+}
+.bicho{
+    display: flex;
+    margin: 1rem;
+    border: solid 0.2rem transparent;
+    background-color: transparent;
+    border-left-color: #f00;
+    border-bottom-color: #f009;
+    border-top-color: transparent;
+    border-right-color:transparent;
+}
+.bicho::placeholder{
+    color:#fa0;
+    padding: 0.4rem;
+}
+.submit{
+    margin: 1rem;
+    display: flex;
+    padding:0.3rem;
+    background-color: #f009;
+    border: solid 0.1rem #f00;
 }
 .footer{
     text-align: center;
@@ -47,59 +166,4 @@
 }
 .a{
     transition:color 0.8s linear 0.4s;
-}
-li{
-    display: flex;
-    justify-content: center;
-}
-.queery{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #d36;
-}
-.formulario{
-    display: flexbox;
-    margin: auto;
-    border:solid 1px grey;
-    width: fit-content;
-}
-.input1{
-    margin: 10px 50px;
-    background-color: #00f;
-    border-color: #649;
-}
-.input1::placeholder{
-    color:#0f0;
-}
-.input2{
-    margin:10px 105px;
-    background-color: #ff0;
-    border-color: #990;
-}
-.formulario2{
-    display:flexbox;
-    margin: auto;
-    width:fit-content;
-    border: solid 1px #06c;
-}
-.nombres{
-    display: flex;
-    margin: auto;
-    width: fit-content;
-    background-color: #0f9;
-    color:#000
-}
-.bicho{
-    margin: 10px 50px;
-    background-color: #c0d;
-    border-color: #f80;
-}
-.bicho::placeholder{
-    color:#0f0
-}
-.submit{
-    margin:10px 105px;
-    background-color: #000;
-    border-color: #990;
 }
