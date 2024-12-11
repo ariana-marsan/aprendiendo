@@ -5,7 +5,7 @@
     font-family: 'Raleway';
     border: none;
 }
-.h1{
+#h1{
     display: flex;
     color:red;
     align-items: center;
@@ -14,7 +14,7 @@
     font-family: 'Parkinsans', 'Times New Roman', Times, serif;
     padding: 1rem;
 }
-.h1:hover{
+#h1:hover{
     transition: 2s;
     color:#fff;
 }
@@ -40,6 +40,8 @@
     text-decoration: underline;
 }
 .spider{
+    text-decoration: none;
+    color: #fff;
     width: 30px;
     aspect-ratio: 1/1;
     overflow: hidden;
@@ -53,41 +55,47 @@
     text-decoration: none;
 }
 .body{
+    min-height: 100vh;
     background: linear-gradient(#ddd,#fff);
-    height: 100vh;
+    height: 100%;
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+}
+.bugs{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
 }
 .queery{
     display:flex;
+    flex-direction: column;
     padding: 1rem;
+    align-items: center;
 }
 .foto{
-    width: 350px;
-    height: 400px;
-
+    width: 23vw;
+    height: 45vh;
+    object-fit: cover;
+    align-self: center;
 }
 .foto:hover{
-    filter: blur(3px) ;
     box-shadow: 0 0 40px 0 #0009;
     transition:filter 4s, box-shadow 0.8s ease-in-out;
 }
-.texto{
-    display: flexbox;
-}
 .pregunta{
     padding: 1rem;
-    display: flex;
-    align-items: 50vw;
+    display: grid;
+    text-align: center;
 }
 .formulario{
-    display: flexbox;
-    margin-left: 1rem;
-    border:solid 1px red;
-    width: fit-content;
-
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    gap: 1rem;
 }
 .input1{
-    margin: 1rem;
-    display: flex;
+    padding: 0.4rem 0;
     border: solid 0.2rem transparent;
     background-color: transparent;
     border-left-color: #f00;
@@ -96,74 +104,21 @@
     border-right-color:transparent;
 }
 .input1::placeholder{
-    color:#fa0;
+    color:#fff9;
     padding:0.4rem
 }
 .input2{
-    margin: 1rem;
-    display: flex;
     padding:0.3rem;
     background-color: #f009;
     border: solid 0.1rem #f00;
-}
-.nombres{
-    display: flexbox;
-    margin: auto;
-    margin-bottom: 1rem;
-    width: fit-content;
-    background-color: #f009;
-    color:#000;
-}
-.pick{
-    padding: 1REM;
-}
-.bugs{
-    padding: 1rem;
-}
-.formulario2{
-    display:flexbox;
-    margin: auto;
-    width:fit-content;
-    border: solid 1px #f00;
-    padding: 1rem;
-}
-.bicho{
-    display: flex;
-    margin: 1rem;
-    border: solid 0.2rem transparent;
-    background-color: transparent;
-    border-left-color: #f00;
-    border-bottom-color: #f009;
-    border-top-color: transparent;
-    border-right-color:transparent;
-}
-.bicho::placeholder{
-    color:#fa0;
-    padding: 0.4rem;
-}
-.submit{
-    margin: 1rem;
-    display: flex;
-    padding:0.3rem;
-    background-color: #f009;
-    border: solid 0.1rem #f00;
+    text-align: center;
+    color: #eee;
 }
 .footer{
     text-align: center;
-    position: fixed;
     bottom: 0;
     width: 100%;
     height: 40px;
     padding-top: 20px;
-    background-color:darkslategrey;
-}
-.a{
-    text-decoration: none;
-    color: #50eb29;
-}
-.a:hover{
-    color: red;
-}
-.a{
-    transition:color 0.8s linear 0.4s;
+    position: absolute;
 }
