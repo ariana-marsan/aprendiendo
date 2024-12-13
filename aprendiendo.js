@@ -3,42 +3,54 @@
 // alert (`hello ${name} osorio`);
 // } else{ alert(`hello ${name}`)}
 
-const input1= document.querySelector(".input1");
-const input2= document.querySelector(".input2");
-const formulario= document.querySelector(".formulario");
+const butterfly1= document.querySelector(".butterfly1");
+const butterfly2= document.querySelector(".butterfly2");
+const butterfly= document.querySelector(".butterfly");
 
-input2.addEventListener("click",(e)=>{
-    if(input1.value=="lepidoptera"){
-        formulario.innerHTML=`felicidades, no sos un pelotudo`
+butterfly2.addEventListener("click",(e)=>{
+    if(butterfly1.value=="lepidoptera" || butterfly1.value=="Lepidoptera"){
+        butterfly.innerHTML=`felicidades, no sos un pelotudo`
     }
-    else{formulario.innerHTML=`le erraste`}
+    else{butterfly.innerHTML=`le erraste`}
+})
+
+const aracnid1= document.querySelector(".aracnid1");
+const aracnid2= document.querySelector(".aracnid2");
+const aracnid= document.querySelector(".aracnid");
+
+aracnid2.addEventListener("click",(e)=>{
+    if(aracnid1.value=="jumping spider" || aracnid1.value=="Jumping Spider"){
+        aracnid.innerHTML=`felicidades, no sos un pelotudo`
+    }
+    else{aracnid.innerHTML=`le erraste`}
+})
+
+const mantis1= document.querySelector(".mantis1");
+const mantis2= document.querySelector(".mantis2");
+const mantis= document.querySelector(".mantis");
+
+mantis2.addEventListener("click",(e)=>{
+    if(mantis1.value=="Mantis" || mantis1.value=="mantis"){
+        mantis.innerHTML=`felicidades, no sos un pelotudo`
+    }
+    else{mantis.innerHTML=`le erraste`}
+})
+
+const ladybug1= document.querySelector(".ladybug1");
+const ladybug2= document.querySelector(".ladybug2");
+const ladybug= document.querySelector(".ladybug");
+
+ladybug2.addEventListener("click",(e)=>{
+    if(ladybug1.value=="yes" || ladybug1.value=="Yes"){
+        ladybug.innerHTML=`felicidades, no sos un pelotudo`
+    }
+    else{ladybug.innerHTML=`le erraste`}
 })
 
 let insectos={
 // reino,filo,subfilo,clase,orden
     mariposa:["Animalia"," Arthropoda"," Hexapoda"," Insecta "," Lepidoptera"],
     araña: ["Animalia"," Arthropoda"," Chelicerata"," Arachnida"," Araneae"], 
-    abeja: ["Animalia"," Arthropoda"," no tiene subfilo"," Insecta"," Hymenoptera"],
-    hormiga: ["Animalia"," Arthropoda"," Hexapoda"," Insecta"," Hymenoptera"]
+    mantis: ["Animalia"," Arthropoda"," No tiene subfilo"," Insecta"," Mantodea"],
+    hormiga: ["Animalia"," Arthropoda"," No tiene subfilo"," Insecta"," Coleópteros"]
 }
-
-const bicho= document.querySelector(".bicho");
-const boton= document.querySelector(".submit");
-const formulario2=document.querySelector(".formulario2");
-
-console.log(insectos["mariposa"][0])
-boton.addEventListener("click",(e)=>{
-    if (bicho.value=="mariposa"){
-        formulario2.innerHTML=insectos["mariposa"]
-    }
-    else if (bicho.value=="araña"){
-        formulario2.innerHTML=insectos["araña"]
-    }
-    else if(bicho.value=="hormiga"){
-        formulario2.innerHTML=insectos["hormiga"]
-    }
-    else if (bicho.value=="abeja"){
-        formulario2.innerHTML=insectos["abeja"]
-    }
-    else{formulario2.innerHTML=`elegi bien bobo`}
-})
